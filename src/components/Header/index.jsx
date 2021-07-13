@@ -1,4 +1,5 @@
 import React from "react";
+import NewsSection from '../NewsSection';
 import { BrandTitle, Menu, StyledHeader } from './styles'
 
 export default function Header() {
@@ -10,6 +11,7 @@ export default function Header() {
         <li>Cadastre-se</li>
         <li>Contatos</li>
       </Menu>
+      <NewsSection />
     </StyledHeader>
   );
 }

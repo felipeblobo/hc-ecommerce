@@ -13,6 +13,7 @@ export const Menu = styled.ul`
   li {
     margin: 0 1rem;
     list-style: none;
+    cursor: pointer;
   }
 `; 
 
