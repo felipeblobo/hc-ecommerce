@@ -1,53 +1,53 @@
 import styled from "styled-components";
 
-export const MainGrid = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 4rem;
-  width: 80vw;
-  margin: 0 auto;
-`; 
 
-export const MainImage = styled.img`
-
-  width: 100%;
-  border-radius: 1rem;
-
-`;
-
-export const MainContent = styled.main`
-
+export const News = styled.div`
+ 
+  background-color: #1a181a;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
   justify-content: center;
 
+
   h2 {
+    text-align: center;
+    padding-top: 2rem;
     font-family: 'Zen Loop', cursive;
-    font-size: 2rem;
-    margin: 1rem 0;
+    font-size: 3rem;
   }
 
   p {
-    font-weight: 300;
-    margin-bottom: 2rem;
-    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
   }
-
-  button {
-    align-self: center;
-    padding:1rem;
-    width: 11.25rem;
-    border-radius: 10px;border: none;
-    background-color: #18ca8b;
-    font-size: 1.1rem;
-    cursor: pointer;
-
-    &:hover {
-      filter: contrast(0.8);
-    }
-
-  }
-
-
 `;
+
+
+export const PromotionGrid = styled.div`
+  display: flex;
+  max-width: 70rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 3rem;
+  
+
+`
+
+export const PromotionCard = styled.div`
+  width: 20rem;
+  height: 25rem;
+  background-color: #dfd9c5;
+  border-radius: 20px;
+
+
+  img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+` 

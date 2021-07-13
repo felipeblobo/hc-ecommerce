@@ -1,19 +1,29 @@
-import React from "react";
-import { MainContent, MainGrid, MainImage } from "./styles";
-import ModelWithClothes from "../../assets/img/roupas6.jfif";
+import React from 'react'
+import { News, PromotionCard, PromotionGrid } from './styles'
+import promotionOne from '../../assets/img/roupas7.png';
+import promotionTwo from '../../assets/img/roupas.jfif';
+import promotionThree from '../../assets/img/roupas5.jfif';
+import promotionFour from '../../assets/img/roupas4.jfif';
 
 export default function NewsSection() {
   return (
-    <MainGrid>
-      <MainImage src={ModelWithClothes} alt="" />
-      <MainContent>
-        <h2>Tranforme seu dia, sinta-se abraçada pelo que veste! </h2>
-        <p>
-          Nossas roupas são confeccionadas por meio da valorização do trabalho
-          das mulheres e incentiva a produção local voltada a sustentabilidade!
-        </p>
-        <button>Comprar</button>
-      </MainContent>
-    </MainGrid>
-  );
+    <News>
+      <h2>Coleção Moda Viva</h2>
+      <p>Tudo com 50% de desconto!!!</p>
+      <PromotionGrid>
+        <PromotionCard>
+          <img src={promotionOne} alt="Roupas da promoção" />
+        </PromotionCard>
+        <PromotionCard>
+          <img src={promotionTwo} alt="Roupas da promoção" />
+        </PromotionCard>
+        <PromotionCard>
+          <img src={promotionThree} alt="Roupas da promoção" />
+        </PromotionCard>
+        <PromotionCard>
+          <img src={promotionFour} alt="Roupas da promoção" />
+        </PromotionCard>
+      </PromotionGrid>
+    </News>
+  )
 }

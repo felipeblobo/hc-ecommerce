@@ -1,5 +1,5 @@
 import React from "react";
-import NewsSection from '../NewsSection';
+import CallActionSection from '../CallActionSection';
 import { BrandTitle, Menu, StyledHeader } from './styles'
 
 export default function Header() {
@@ -7,11 +7,11 @@ export default function Header() {
     <StyledHeader>
       <Menu>
         <BrandTitle>Moda Viva</BrandTitle>
-        <li>Novidades</li>
+        <li>Promoções</li>
         <li>Cadastre-se</li>
         <li>Contatos</li>
       </Menu>
-      <NewsSection />
+      <CallActionSection />
     </StyledHeader>
   );
 }

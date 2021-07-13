@@ -20,5 +20,5 @@ export const Menu = styled.ul`
 export const BrandTitle = styled.h1`
   font-family: 'Zen Loop', cursive;
   margin-right: 3rem;
-  font-size: 3rem;
+  font-size: 4rem;
 `;
