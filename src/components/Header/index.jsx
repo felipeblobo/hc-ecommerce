@@ -8,7 +8,7 @@ export default function Header() {
       <Menu>
         <BrandTitle>Moda Viva</BrandTitle>
         <li>Promoções</li>
-        <li>Cadastre-se</li>
+        <li>Produtos</li>
         <li>Contatos</li>
       </Menu>
       <CallActionSection />

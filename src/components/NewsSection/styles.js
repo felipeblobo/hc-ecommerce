@@ -32,6 +32,7 @@ export const PromotionGrid = styled.div`
   justify-content: center;
   gap: 6rem;
   margin-top: 3rem;
+  padding-bottom: 4rem;
   
 
 `
