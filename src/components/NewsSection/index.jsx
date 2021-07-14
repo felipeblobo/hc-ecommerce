@@ -13,19 +13,19 @@ export default function NewsSection() {
       <PromotionGrid>
         <PromotionCard>
           <img src={promotionOne} alt="Roupas da promoção" />
-          <p>Camisa de R$ 200, por R$ 100,00.</p>
+          <p>Camisa de R$ 200, por <span>R$ 100</span>.</p>
         </PromotionCard>
         <PromotionCard>
           <img src={promotionTwo} alt="Roupas da promoção" />
-          <p>Kit inverno de R$ 325,53, por R$ 145,10.</p>
+          <p>Kit inverno de R$ 325,50, por <span>R$ 145,00</span>.</p>
         </PromotionCard>
         <PromotionCard>
           <img src={promotionThree} alt="Roupas da promoção" />
-          <p>Qualquer uma por R$ 110,10.</p>
+          <p>Qualquer peça por <span>R$ 110</span>.</p>
         </PromotionCard>
         <PromotionCard>
           <img src={promotionFour} alt="Roupas da promoção" />
-          <p>Somente por R$ 60,50.</p>
+          <p>Somente por <span>R$ 60,50</span>.</p>
         </PromotionCard>
       </PromotionGrid>
     </News>

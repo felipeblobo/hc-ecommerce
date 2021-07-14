@@ -44,6 +44,7 @@ export const PromotionCard = styled.div`
   height: 25rem;
   background-color: #dfd9c5;
   border-radius: 20px;
+  cursor: pointer;
 
 
   img {
@@ -52,6 +53,14 @@ export const PromotionCard = styled.div`
     object-fit: cover;
     border-radius: 20px;
     margin-bottom: .5rem;
+  }
+
+  p {
+    span {
+      color: #cff564;
+      font-size: 1.5rem;
+      margin-left: .4rem;
+    }
   }
 
 ` 

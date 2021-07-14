@@ -21,6 +21,14 @@ export const Menu = styled.ul`
     margin: 0 1rem;
     list-style: none;
     cursor: pointer;
+    transition: .5s;
+
+    &:hover {
+      background-color: #612F1E;
+      padding: .5rem 1rem;
+      border-radius: 10px;
+      color: #fff;
+    }
 
     @media (max-width: 1023px) {
       display: none;
