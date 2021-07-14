@@ -34,7 +34,7 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  width: 60rem;
+  max-width: 60rem;
   
   @media (max-width: 1023px) {
     display: flex;
