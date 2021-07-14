@@ -36,6 +36,10 @@ export const Content = styled.div`
   justify-content: center;
   width: 60rem;
   
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+  }
 
 
   h3 {
@@ -49,6 +53,10 @@ export const SocialMedia = styled.ul`
   display: flex;
   list-style: none;
   margin-top: 1rem;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 1rem;
+  }
 
   li {
     margin: 0 .5rem;

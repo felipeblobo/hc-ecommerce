@@ -1,6 +1,6 @@
 import React from "react";
 import CallActionSection from "../CallActionSection";
-import { BrandTitle, Menu, StyledHeader } from "./styles";
+import { BrandTitle, Menu, StyledHeader } from "./styles.js";
 import { Link } from "react-scroll";
 
 export default function Header() {

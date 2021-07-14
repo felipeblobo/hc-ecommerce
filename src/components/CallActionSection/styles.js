@@ -6,12 +6,24 @@ export const MainGrid = styled.section`
   grid-gap: 4rem;
   width: 80vw;
   margin: auto;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
 `; 
 
 export const MainImage = styled.img`
 
+  min-width: 350px;
   width: 100%;
   border-radius: 1rem;
+
+  @media (max-width: 1023px) {
+    max-width: 250px;
+  }
 `;
 
 export const MainContent = styled.main`
@@ -46,9 +58,17 @@ align-items: center;
 align-self: flex-start;
 margin-top: 2rem;
 
+@media (max-width: 1023px) {
+  margin: 1rem ;
+}
+
 label {
   margin-right: .5rem;
   font-size: 1.5rem;
+
+  @media (max-width: 1023px) {
+    font-size: 1rem;
+  }
 }
 
 input {
@@ -58,6 +78,11 @@ input {
   border: none;
   border-radius:10px 0 0 10px;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+
+  @media (max-width: 1023px) {
+    width: 12rem;
+  }
 
   ::placeholder {
     opacity: 0.6;
@@ -79,6 +104,10 @@ button {
   font-size: 1rem;
   cursor: pointer;
   color: #fff;
+
+  @media (max-width: 1023px) {
+    width: 6rem;
+  }
 
   &:hover {
     filter: contrast(0.8);
