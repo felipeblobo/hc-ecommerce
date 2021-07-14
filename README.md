@@ -1,6 +1,3 @@
-<h1 align="center">
-  <img alt="moda viva" title="Moda Viva" src=".github/logo.svg" width="220px" />
-</h1>
 
 <p align="center">
  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
@@ -11,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="Moda Viva" src=".github/devfinances.png" width="100%">
+  <img alt="Moda Viva" src="https://github.com/felipeblobo/hc-ecommerce/blob/master/home.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
