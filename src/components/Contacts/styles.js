@@ -22,6 +22,9 @@ export const GridSection = styled.div`
   justify-content: center;
   align-items: center;
 
+  a {
+    text-decoration: none;
+  }
 `;
 
 
@@ -52,3 +55,15 @@ export const SocialMedia = styled.ul`
     cursor: pointer;
   }
 `
+
+export const DevInfo = styled.div`
+
+h5 {
+  margin: 1rem 0;
+}
+
+a {
+  margin-right: .5rem;
+  
+}
+`;

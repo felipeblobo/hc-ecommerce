@@ -57,11 +57,15 @@ input {
   width: 20rem;
   border: none;
   border-radius:10px 0 0 10px;
+  font-family: 'Roboto', sans-serif;
 
+  ::placeholder {
+    opacity: 0.6;
+  }
 
   &:focus {
     box-shadow: 0 0 0 0;
-    outline: 0;
+    outline: 0 ;
 }
 }
 

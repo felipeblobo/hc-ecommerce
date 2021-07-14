@@ -6,7 +6,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { ContactSection, Content, GridSection, SocialMedia } from "./styles";
+import { ContactSection, Content, DevInfo, GridSection, SocialMedia } from "./styles";
 
 export default function Contacts() {
   return (
@@ -38,10 +38,10 @@ export default function Contacts() {
           <h4>
             Site elaborado durante o{" "}
             <a target="_blank" href="https://www.hiringcoders.com.br/">
-              Hiring Coders
+              Hiring Coders!
             </a>
           </h4>
-          <div>
+          <DevInfo>
             <h5>Desenvolvedor: </h5>
 
             <a
@@ -67,7 +67,7 @@ export default function Contacts() {
                 style={{ color: "#5B2B1A" }}
               />
             </a>
-          </div>
+          </DevInfo>
         </GridSection>
       </Content>
     </ContactSection>
