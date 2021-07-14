@@ -37,7 +37,7 @@ export default function Contacts() {
         <GridSection>
           <h4>
             Site elaborado durante o{" "}
-            <a target="_blank" href="https://www.hiringcoders.com.br/">
+            <a target="_blank" rel="noreferrer" href="https://www.hiringcoders.com.br/">
               Hiring Coders!
             </a>
           </h4>
