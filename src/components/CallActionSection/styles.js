@@ -23,6 +23,7 @@ export const MainImage = styled.img`
 
   @media (max-width: 1023px) {
     max-width: 250px;
+    padding: 0 1rem;
   }
 `;
 
@@ -33,10 +34,15 @@ export const MainContent = styled.main`
   align-items: center;
   justify-content: center;
 
+
   h2 {
     font-family: 'Zen Loop', cursive;
     font-size: 3rem;
     margin: 1rem 0;
+
+    @media (max-width: 1023px) {
+      padding: 0 1rem;
+    }
   }
 
   p {
@@ -44,6 +50,10 @@ export const MainContent = styled.main`
     margin-bottom: 2rem;
     line-height: 1.5rem;
     font-size: 1.2rem;
+
+    @media (max-width: 1023px) {
+      padding: 0 1rem;
+    }
   }
 
   }

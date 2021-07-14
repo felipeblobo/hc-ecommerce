@@ -18,9 +18,11 @@ export const News = styled.div`
     font-size: 3rem;
   }
 
-  p {
+  >p {
     text-align: center;
     margin-top: 1rem;
+    font-size: 2rem;
+    color: #e2ff0c;
   }
 `;
 
@@ -49,6 +51,7 @@ export const PromotionCard = styled.div`
     height: 100%; 
     object-fit: cover;
     border-radius: 20px;
+    margin-bottom: .5rem;
   }
 
 ` 
