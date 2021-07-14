@@ -7,7 +7,7 @@ import promotionFour from '../../assets/img/roupas4.jfif';
 
 export default function NewsSection() {
   return (
-    <News>
+    <News id='news'>
       <h2>Coleção Moda Viva</h2>
       <p>Tudo com 50% de desconto!!!</p>
       <PromotionGrid>

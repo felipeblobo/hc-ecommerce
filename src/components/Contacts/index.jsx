@@ -10,7 +10,7 @@ import { ContactSection, Content, DevInfo, GridSection, SocialMedia } from "./st
 
 export default function Contacts() {
   return (
-    <ContactSection>
+    <ContactSection id='contacts'>
       <h2>Contatos</h2>
       <Content>
         <GridSection>
