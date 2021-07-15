@@ -1,13 +1,32 @@
 import React, { useState } from "react";
-import { Form, MainContent, MainGrid, MainImage } from "./styles";
+import { Form, MainContent, MainGrid, MainImage, SendedEmail } from "./styles";
 import ModelWithClothes from "../../assets/img/roupas2.jfif";
 
 export default function CallActionSection() {
-  const [email, setEmail] = useState("");
+  const [data, setData] = useState({
+    name: "",
+    email: ""
+  });
+  const [status, setStatus] = useState(false);
+  console.log(data)
+
+  function handleChange(event) {
+    const fieldName = event.target.getAttribute("name");
+    const value = event.target.value;
+
+    setData({
+      ...data,
+      [fieldName]: value,
+    });
+  }
 
   function setEmailToStorage() {
-    localStorage.setItem("email", JSON.stringify(email));
-    setEmail("");
+    localStorage.setItem("userData", JSON.stringify(data));
+    setData("");
+    setStatus(true);
+    setTimeout(() => {
+      setStatus(false);
+    }, 3000);
   }
 
   return (
@@ -19,16 +38,35 @@ export default function CallActionSection() {
           Nossas roupas são confeccionadas por meio da valorização do trabalho
           das mulheres e incentiva a produção local voltada a sustentabilidade!
         </p>
+        {status && <SendedEmail>Email cadastrado com sucesso</SendedEmail>}
         <Form>
+          
+          <div>
+          <label htmlFor="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Digite seu nome"
+            onChange={handleChange}
+            value={data.name}
+          />
+          </div>
+  
+          <div>
           <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
             placeholder="Cadastre-se para receber promoções exclusivas"
-            onChange={(e) => {setEmail(e.target.value)}}
-            value={email}
+            onChange={handleChange}
+            value={data.email}
           />
-          <button type="button" onClick={setEmailToStorage}>Enviar</button>
+         
+          </div>
+          <button type="submit" onClick={setEmailToStorage}>
+            Enviar
+          </button>
+         
         </Form>
       </MainContent>
     </MainGrid>

@@ -9,7 +9,7 @@ export default function NewsSection() {
   return (
     <News id='news'>
       <h2>Coleção Moda Viva</h2>
-      <p>Tudo com mais de 50% de desconto!!!</p>
+      <p>Tudo com ao menos 50% de desconto!!!</p>
       <PromotionGrid>
         <PromotionCard>
           <img src={promotionOne} alt="Roupas da promoção" />
