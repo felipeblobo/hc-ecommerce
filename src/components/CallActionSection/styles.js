@@ -60,7 +60,6 @@ export const Form = styled.form`
 display: flex;
 justify-content: center;
 align-self: flex-start;
-margin-top: 2rem;
 flex-direction: column;
 
 @media (max-width: 1023px) {
@@ -114,7 +113,7 @@ input {
 button {
   align-self: flex-end;
   padding:1rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   width: 8rem;
   border-radius: 10px;
   border: none;
@@ -135,6 +134,7 @@ button {
 
 
 export const SendedEmail = styled.h3`
+    margin: 1rem 0;
     background-color: #18ca8b;
     padding: .7rem;
     border-radius: 10px;

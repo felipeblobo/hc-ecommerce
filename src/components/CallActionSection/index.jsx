@@ -20,13 +20,16 @@ export default function CallActionSection() {
     });
   }
 
-  function setEmailToStorage() {
-    localStorage.setItem("userData", JSON.stringify(data));
-    setData("");
-    setStatus(true);
-    setTimeout(() => {
-      setStatus(false);
-    }, 3000);
+  function setEmailToStorage(e) {
+    e.preventDefault();
+    if (data.name !== "" && data.email !== ""){
+      localStorage.setItem("userData", JSON.stringify(data));
+      setData("");
+      setStatus(true);
+      setTimeout(() => {
+        setStatus(false);
+      }, 3000);
+    } 
   }
 
   return (
@@ -39,7 +42,7 @@ export default function CallActionSection() {
           das mulheres e incentiva a produção local voltada a sustentabilidade!
         </p>
         {status && <SendedEmail>Email cadastrado com sucesso</SendedEmail>}
-        <Form>
+        <Form onSubmit={setEmailToStorage}>
           
           <div>
           <label htmlFor="name">Nome</label>
@@ -63,7 +66,7 @@ export default function CallActionSection() {
           />
          
           </div>
-          <button type="submit" onClick={setEmailToStorage}>
+          <button type="submit" >
             Enviar
           </button>
          

@@ -2,11 +2,7 @@ import styled from 'styled-components';
 
 export const StyledHeader = styled.header`
   background-color: #dfd9c5;
-  height: 100vh;
-
-  @media (max-width: 1023px) {
-    height: 100%;
-  }
+  height: 100%;
 
 ` ;
 
